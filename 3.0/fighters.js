@@ -130,6 +130,7 @@ function HTMLtoFighter(fighter) {
     ) {
         Object.entries(getEnvData_Data(envData.INCLUDE.GEAR_TABLE)[ans.SPECIE]).forEach(([ITEM,DATA]) => {
             let PROB = DATA.CHANCE;
+            console.info(getEnvData_Data(envData.INCLUDE.ITEMS))
             let max = (getEnvData_Data(envData.INCLUDE.ITEMS)).filter((i)=>i.NAME==ITEM)[0].MAX_QUANTITY;
             let disc = envData.INCLUDE.GAME.equipedUniqueItems[ITEM];
             if (max === '' || disc < parseInt(max)) {
@@ -244,5 +245,6 @@ window.onbeforeunload = (event) => {
     return "¿Are you sure you want to leave? The fight will be ended and data will not be saved.";
 
 }
+
 
 
