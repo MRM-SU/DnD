@@ -1,15 +1,16 @@
 {
     "SPECIES":[
-        "Base"
+        "base"
     ],
     "ITEMS":[
-        "Base"
+        "base"
     ],
     "CHARACTERS":[
         "e1"
     ],
     "GEAR_TABLE":[
-        "Base"
+        "base"
     ],
     "GAME":"Game"
+
 }
