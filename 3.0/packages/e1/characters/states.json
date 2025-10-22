@@ -1,0 +1,9 @@
+{
+    "ABYSS":{
+        "NAME":"Abyss",
+        "DESCRIPTION":"The target is engulfed in an abyssal darkness that saps their strength and willpower. Each turn, they lose (<lvl> x 5) HP and have a (<lvl> x 5)% chance to skip their action due to overwhelming despair. The effect lasts for 3 turns.",
+        "ID":"abyss",
+        "STACK":"MAX-LEVEL",
+        "ICON":"icons/abyss.webp"
+    }
+}

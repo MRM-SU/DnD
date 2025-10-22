@@ -1,0 +1,75 @@
+{
+    "Zombie":{
+        "Espada básica":{
+            "CHANCE":0.1
+        },
+        "Cuchilla":{
+            "CHANCE":0.125
+        },
+        "Daga":{
+            "CHANCE":0.135
+        },
+        "Alabarda":{
+            "CHANCE":0.05
+        },
+        "Hachimaki":{
+            "CHANCE":0.01
+        },
+        "Dados del diablo":{
+            "CHANCE":0.01
+        },
+        "Anillo dorado":{
+            "CHANCE":0.075
+        },
+        "Espada de la realeza":{
+            "CHANCE":0.05
+        },
+        "Sangijuela":{
+            "CHANCE":0.05
+        },
+        "Baraja de tarot":{
+            "CHANCE":0.075
+        },
+        "Arco de madera":{
+            "CHANCE":0.1
+        },
+        "Ballesta":{
+            "CHANCE":0.075
+        },
+        "Cadenas del averno":{
+            "CHANCE":0.05
+        },
+        "Espada colosal":{
+            "CHANCE":0.01
+        },
+        "Espejo de la dualidad":{
+            "CHANCE":0.01,
+            "PRIORITY":-1
+        },
+        "Corona bendita":{
+            "CHANCE":0.001
+        },
+        "Célula misteriosa":{
+            "CHANCE":0.05
+        },
+        "Escudo de cristal":{
+            "CHANCE":0.2
+        },
+        "Lista de la muerte":{
+            "CHANCE":0.05
+        },
+        "Íncubo":{
+            "CHANCE":0.025
+        },
+        "Gran enciclopedia":{
+            "CHANCE":0.05,
+            "PRIORITY":-1
+        },
+        "Poción de la inclusión":{
+            "CHANCE":0.05
+        },
+        "Guadaña":{
+            "CHANCE":0.01
+        }
+    }
+}

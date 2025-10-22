@@ -1,0 +1,160 @@
+Perfecto. Entonces vamos a tirar la ecuación a la basura y quedarnos con lo incomprensible, lo que ni los magos ni los dioses entienden.
+No algo que “funciona” porque tiene sentido, sino porque la realidad se ve obligada a aceptarlo.
+
+Aquí tienes algo sobrenatural, definido, violento y con presencia física total —como si un milagro hubiera decidido ser un arma.
+
+🌑 Lamento del Creador
+
+Tipo: Ataque mágico sobrenatural (energía pura, no elemental)
+Categoría: Superataque / prohibido / devastador
+Coste: 80% del maná total (mínimo maná: 10) + 15% de la vida máxima
+Carga: 4 segundos
+Cooldown: una vez por día
+
+Ejecución (movimientos)
+
+El Silencio de Dios (1s):
+El ejecutor se queda inmóvil.
+Todo sonido desaparece. Las llamas se apagan. Los relojes dejan de avanzar.
+Un halo grisáceo comienza a rodearlo, y el suelo bajo sus pies se agrieta como si no soportara su mera existencia.
+
+La Disonancia (1s):
+Sus ojos se abren y muestran un brillo blanco, sin pupila.
+El aire a su alrededor se curva, como si algo intentara entrar en este mundo.
+La piel del lanzador se llena de marcas que laten con un patrón rítmico, parecido al pulso del planeta.
+
+El Grito Innombrable (1s):
+Levanta la mano, y del cielo descienden tres anillos de luz flotantes —no dorados, sino con un brillo blanquecino imposible de mirar sin dolor.
+De su centro, cae una lágrima de luz, que se detiene justo sobre la palma del ejecutor.
+Esa lágrima grita. No con sonido: con significado. Todo lo vivo lo siente en el alma.
+
+El Lamento (1s):
+El ejecutor cierra el puño —y la lágrima explota.
+Se libera una onda expansiva de luz líquida, con textura densa y movimiento lento, que atraviesa el campo entero.
+El aire se desintegra en líneas verticales y todo lo que tenga sombra queda grabado en el suelo como si hubiera sido pintado allí para siempre.
+
+Efectos (mecánica concreta y brutal)
+
+Área: círculo de 50 metros de radio alrededor del lanzador.
+
+Daño:
+
+D900 daño divino verdadero (ignora toda defensa, resistencia y armadura).
+
+Los enemigos con menos de 60% HP mueren al instante (sin chequeo).
+
+Los jefes o entidades mayores sufren D600 daño verdadero + pérdida del 25% de su HP máximo.
+
+Los aliados reciben D200 daño (inevitable), pero quedan inmunes al siguiente ataque enemigo.
+
+Efectos adicionales:
+
+Todos los seres golpeados pierden temporalmente la capacidad de usar habilidades durante 2 turnos (sus voces “se quiebran”).
+
+Los objetos de rareza ≤ 3 estrellas se desintegran en polvo luminoso.
+
+El suelo en el área queda marcado con símbolos de geometría imposible, que arden durante 10 segundos.
+
+Los muertos por el ataque dejan resonancias: sus sombras siguen moviéndose por unos segundos, como si no entendieran que han muerto.
+
+Riesgo y posataque
+
+Tras lanzar Lamento del Creador, el usuario cae de rodillas.
+Sus ojos sangran luz. No puede hablar durante 1 minuto.
+
+Durante los siguientes 3 turnos, su defensa mágica y física se reducen un 40%.
+
+Si se usa más de una vez al día, el ejecutor pierde permanentemente 1 punto de su atributo principal (Magia o Fe, según el sistema).
+
+Frase de invocación sugerida
+
+“Que el Creador recuerde lo que hizo… y se arrepienta.”
+
+(Tras pronunciarla, todo el entorno vibra, como si algo gigantesco —y muy viejo— acabara de despertar debajo del mundo.)
+
+Resumen: por qué está ROTO
+
+Ignora toda defensa.
+
+Mata instantáneamente a enemigos debilitados.
+
+Daña aliados, pero los bendice con inmunidad.
+
+Bloquea habilidades enemigas durante 2 turnos.
+
+Deja cicatrices permanentes en el escenario.
+
+Tiene animación de poder divino sin moralidad.
+
+¿Quieres que lo ajuste a un tipo concreto de poder sobrenatural (divino, espectral, ancestral, prohibido, o incluso “del alma”)?
+Así puedo hacerlo aún más personalizado —por ejemplo “Lamento del Creador (Versión espectral)” con un tono más fantasmal y menos celestial.
+
+
+```json
+{
+    "Krethion": {
+        "REQUIRES": ["krethion.js"],
+        "FULL_NAME": "Krethion, King of Perfection, Master of Quartz",
+        "SHORT_NAME": "Krethion",
+        "DESCRIPTION": "I was born in the distant lands of Kreth, where quartz shines as bright as greed, and poverty hides in the cracks. My gift was perfection itself: I could polish surfaces, sharpen blades, even mend broken mechanisms. Admired and adored, I sought only to improve the world… until I realized imperfection must be eradicated entirely.\n\nNow I travel the world, reshaping mortals into flawless beings, leaving behind only echoes of what they were. My inner child cries, trapped beneath the weight of my perfection, but I do not listen.",
+        "IMG": "characters/Krethion.webp",
+        "HP": 120,
+        "DMG": "D20",
+        "VEL": 8,
+        "ITEM_SLOTS": 5,
+        "LEVEL": 0,
+        "HABILITIES": [
+            {
+                "NAME": "Edge of Perfection",
+                "UNLOCKS_AT": 0,
+                "TYPE": "PASIVE|ON-HIT",
+                "DESCRIPTION": "Every attack slightly damages the enemy’s defenses. On a D20 roll of 20, the enemy becomes Crystallized (Level 1).",
+                "COMMAND": {
+                    "NAME": "edge_of_perfection",
+                    "TYPE": "FUNCTION"
+                }
+            },
+            {
+                "NAME": "Polished Strike",
+                "UNLOCKS_AT": 10,
+                "TYPE": "ACTIVE|6MANA",
+                "DESCRIPTION": "Strike an enemy with quartz energy. They become Crystallized (Level 2), slowing their movements for 1 turn.",
+                "COMMAND": {
+                    "NAME": "polished_strike",
+                    "TYPE": "FUNCTION"
+                }
+            },
+            {
+                "NAME": "Quartz Veil",
+                "UNLOCKS_AT": 20,
+                "TYPE": "ACTIVE|10MANA",
+                "DESCRIPTION": "Envelop yourself in a quartz aura. Allies gain minor shielding, and enemies who attack you become Crystallized (Level 2).",
+                "COMMAND": {
+                    "NAME": "quartz_veil",
+                    "TYPE": "FUNCTION"
+                }
+            },
+            {
+                "NAME": "Refiner's Judgement",
+                "UNLOCKS_AT": 30,
+                "TYPE": "ACTIVE|15MANA",
+                "DESCRIPTION": "Send shards of pure quartz in a wide arc. Enemies hit become Crystallized (Level 3) and take D50DMG. Allies are healed for 10% HP.",
+                "COMMAND": {
+                    "NAME": "refiners_judgement",
+                    "TYPE": "FUNCTION"
+                }
+            },
+            {
+                "NAME": "Creator's Lament",
+                "UNLOCKS_AT": 50,
+                "TYPE": "ACTIVE|SUPREME|80% MANA + 15% HP",
+                "DESCRIPTION": "Silence of God: all sound vanishes and the ground cracks.\nDiscordance: eyes glow, marks pulse on your skin.\nUnspeakable Cry: rings of light descend, a tear screams with meaning.\nThe Lament: a dense liquid light explosion dealing 9D100 damage. Can only be used once per fight.",
+                "COMMAND": {
+                    "NAME": "creators_lament",
+                    "TYPE": "FUNCTION"
+                }
+            }
+        ]
+    }
+}
+```

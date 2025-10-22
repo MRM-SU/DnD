@@ -1,0 +1,29 @@
+{
+    "Zombie":{
+        "HP":100,
+        "ITEM_SLOTS":3,
+        "CLASS":"no-dead",
+        "AI":{
+            "ROLL":"D10",
+            "1-5":[{
+                "TYPE":"DMG",
+                "VALUE":"D20",
+                "TARGET":"RANDOM"
+            }],
+            "6-8":[{
+                "TYPE":"USE_ITEM",
+                "ELSE":[{
+                    "TYPE":"DMG",
+                    "VALUE":"D20",
+                    "TARGET":"LOWEST_HP"
+                }]
+            }],
+            "9-10":[{
+                "TYPE":"DMG",
+                "VALUE":"D10",
+                "TARGET":"HIGHEST_HP",
+                "REC":"60%|FINAL"
+            }]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "Espada de la nebulosa": {
+        "TYPE": "",
+        "RARITY": "\ud83d\udcab\u2728\ud83c\udf1f\u2728\ud83d\udcab",
+        "DESCRIPTION": "",
+        "EFFECT": "Al equiparla, tendr\u00e1s x200DMG(extra) y una acci\u00f3n extra: Tajo gal\u00e1ctico, al usar esta habilidad (solo se puede usar cada turno), inflinge 1000D20DMG a todos los enemigos y los deja deshabilitados 1 turno. Puedes dirigir el ataque a un enemigo, esto har\u00e1 que le da\u00f1es por 2D100DMG y lo dejar\u00e1s deshabilitado por 10000000 turnos.",
+        "MAX_QUANTITY": 1
+    }
+}

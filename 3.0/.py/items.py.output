@@ -1,0 +1,121 @@
+{
+    "Colmillos vamp\u00edricos": {
+        "TYPE": "TRINKET",
+        "RARITY": "\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Derrama la sangre de tus enemigos",
+        "EFFECT": "Haces +10DMG y recupera el 40% del da\u00f1o f\u00edsico que has causado.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Libro de los esp\u00edritus": {
+        "TYPE": "ACTIVA",
+        "RARITY": "\u2b50\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Encierra las almas vagantes, lib\u00e9ralas para que entren en tus enemigos",
+        "EFFECT": "Por cada muerte causada, si al siguiente turno de esta muerte usas el libro, capturar\u00e1s el alma del enemigo. Al usarlo de manera ofensiva, libera la media de da\u00f1o de cada enemigo capturado. Puedes capturar hasta 20 enemigos. Si no tienes espacio, puedes remplazar un alma por otra.\nAl morir, los esp\u00edritus son liberando, dirigi\u00e9ndose al enemigo que te ha matado.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Pieza del anillo de la absorci\u00f3n": {
+        "TYPE": "PIEZA",
+        "RARITY": "\u2b50",
+        "DESCRIPTION": "Una pieza de metal brillante, se dice que solo hay 5",
+        "EFFECT": "Al recoger 5, crea un anillo de la absorci\u00f3n.",
+        "MAX_QUANTITY": 5
+    },
+    "Anillo de la absorci\u00f3n": {
+        "TYPE": "ARMADURA",
+        "RARITY": "\ud83d\udcab\u2728\ud83c\udf1f\u2728\ud83d\udcab",
+        "DESCRIPTION": "Absorve a los dem\u00e1s, fue abandonado por su due\u00f1o al matar a su esposa enferma",
+        "EFFECT": "Cada turno en el que est\u00e9s por debajo de tu 50% de vida, tira un D10, si sale un 10, elige un enemigo, absorver\u00e1s el 50% de su vida actu\u00e1l, y lo dejar\u00e1s deshabilitado hasta su pr\u00f3ximo turno.",
+        "MAX_QUANTITY": 1
+    },
+    "Pieza del espejo maldito": {
+        "TYPE": "PIEZA",
+        "RARITY": "\u2b50",
+        "DESCRIPTION": "Un cristal muy reflectante lleno de polvo que parece reflejar algo que no existe, se dice que solo hay 10",
+        "EFFECT": "Al recoger 10, cre un espejo maldito.",
+        "MAX_QUANTITY": 10
+    },
+    "Espejo maldito": {
+        "TYPE": "ACTIVA",
+        "RARITY": "\ud83d\udcab\u2728\ud83c\udf1f\u2728\ud83d\udcab",
+        "DESCRIPTION": "Un espejo que cambia la realidad, \u00fasalo con cuidado",
+        "EFFECT": "Al reflejar un objeto: Tira un D2, si sale un 1, el objeto se elimina, si es limitado, habr\u00e1 una instancia menos para siempre, si sale un 2, el objeto se duplica.\nAl reflejar un enemigo: Tira un D2, si sale un 1, el enemigo tiene un turno extra justo entonces, si sale un 2, el enemigo pierde el 20% de su vida actual.\nPor cada uso, el espejo genera una grieta, si hay 10 grietas, el espejo se romper\u00e1, por cada d\u00eda, el espejo se repara por una grieta.",
+        "MAX_QUANTITY": 1
+    },
+    "Afilador maldito": {
+        "TYPE": "PIEZA",
+        "RARITY": "\u2b50\u2b50",
+        "DESCRIPTION": "Un afilador oscuro que suelta un aura morada densa que parece una niebla",
+        "EFFECT": "Al combinarlo con la espada b\u00e1sica, consigues la espada maldita.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Afilador misterioso": {
+        "TYPE": "PIEZA",
+        "RARITY": "\u2b50\u2b50",
+        "DESCRIPTION": "Un afilador mundano que tiene una forma extra\u00f1a y s\u00edmbolos extra\u00f1os",
+        "EFFECT": "Al combinarlo con la espada b\u00e1sica, consigues la katana.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Afilador m\u00e1gico": {
+        "TYPE": "PIEZA",
+        "RARITY": "\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Un afilador con brillos extra\u00f1os que brilla de manera extra\u00f1a",
+        "EFFECT": "Al combinarlo con la espada b\u00e1sica, consigues la hoja m\u00e1gica.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Afilador legendario": {
+        "TYPE": "PIEZA",
+        "RARITY": "\u2b50\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Un afilador de oro que est\u00e1 como nuevo y parece formar parte de una leyenda",
+        "EFFECT": "Al combinarlo con la espada b\u00e1sica, consigues la espada legendaria.",
+        "MAX_QUANTITY": 1
+    },
+    "Espada b\u00e1sica": {
+        "TYPE": "ARMA",
+        "RARITY": "\u2b50\u2b50",
+        "DESCRIPTION": "Una espada met\u00e1lica algo desgastada que necesitar\u00eda afilarse un poco",
+        "EFFECT": "Al equiparla, tendr\u00e1s +10DMG.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Espada maldita": {
+        "TYPE": "ARMA",
+        "RARITY": "\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Una espada oscura que parece estar hecha de obsidiana. Tiene un aura inquietante y parece estar consumida por un ente",
+        "EFFECT": "Al equiparla, por cada ataque f\u00edsico, tirar\u00e1s un D20, si fallas (sacas un 1), recibir\u00e1s D100DMG, si no, tendr\u00e1s x1.5DMG.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Katana": {
+        "TYPE": "ARMA",
+        "RARITY": "\u2b50\u2b50",
+        "DESCRIPTION": "Una espada ligera pero dif\u00edcil de usar, requiere pr\u00e1ctica constante",
+        "EFFECT": "Cada ataque f\u00edsico, tirar\u00e1s un D10, tendr\u00e1s una racha (que empezar\u00e1 como 1), si tu tirada es menor o igual a la variable, esta aumentar\u00e1 para el pr\u00f3ximo turno y har\u00e1s +30DMG, si fallas, la variable no aumentar\u00e1 y fallar\u00e1s el ataque. Si no haces un ataque f\u00edsico, la variable reducir\u00e1 hasta 1.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Hoja m\u00e1gica": {
+        "TYPE": "ARMA",
+        "RARITY": "\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Una hoja que brilla de forma rara, tiene s\u00edmbolos de estrellas en la empu\u00f1adura",
+        "EFFECT": "En tus ataques f\u00edsicos, tira un D20. Si sacas 1: fallas el ataque, si sacas 15-19: haces +10DMG, si sacas 20, tienes turno extra para usar (opcionalmente) una habilidad.",
+        "MAX_QUANTITY": "infinity"
+    },
+    "Espada legendaria": {
+        "TYPE": "ARMA",
+        "RARITY": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Una espada colosal que est\u00e1 como nueva, se dice que perteneci\u00f3 a un palad\u00edn que la guard\u00f3 antes de su muerte",
+        "EFFECT": "Si equipas esta espada, tendr\u00e1s x1.5DMG(extra) y tus ataques f\u00edsicos nunca podr\u00e1n fallar",
+        "MAX_QUANTITY": 1
+    },
+    "Afilador estelar": {
+        "TYPE": "PIEZA",
+        "RARITY": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+        "DESCRIPTION": "Un afilador extra\u00f1o en el que puedes ver las estrellas del universo a tiempo real, se dice que si sumerges una espada, esta se vuelve \u00fanica",
+        "EFFECT": "Al combinarlo con la espada b\u00e1sica, consigues la Espada de la nebulosa",
+        "MAX_QUANTITY": 1
+    },
+    "Espada de la nebulosa": {
+        "TYPE": "ARMA",
+        "RARITY": "\ud83d\udcab\u2728\ud83c\udf1f\u2728\ud83d\udcab",
+        "DESCRIPTION": "Una espada en la que se pueden ver los l\u00edmites del universo",
+        "EFFECT": "Al equiparla, tendr\u00e1s x2DMG(extra) y una acci\u00f3n extra: Tajo gal\u00e1ctico, al usar esta habilidad (solo se puede usar cada 5 turnos), inflinge 3D20DMG a todos los enemigos y los deja deshabilitados 1 turno. Puedes dirigir el ataque a un enemigo, esto har\u00e1 que le da\u00f1es por 2D100DMG y lo dejar\u00e1s deshabilitado por 3 turnos.",
+        "MAX_QUANTITY": 1
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Mega zombie":{
+        "HP":1000,
+        "ITEM_SLOTS":30,
+        "CLASS":"no-dead mega",
+        "AI":{
+            "DICE":"D10",
+            "1-5":[
+                {"DMG":"2D100"}
+            ],
+            "6-8":[
+                {"USE_ITEM":true}
+            ],
+            "9-10":[
+                {"DMG":"D100","REC":"50%"}
+            ]
+        }
+    }
+}

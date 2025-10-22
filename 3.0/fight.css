@@ -1,0 +1,335 @@
+#selector #fighters > button {
+    background: #fff;
+    font-size: 25px;
+    color: black;
+}
+#selector #fighters > button:hover {
+    background: #fffa;
+    cursor: pointer;
+}
+#selector #fighters > button:active {
+    background: #fff3;
+}
+#selector #fighters > button:first-child {
+    border-bottom: solid 1px black;
+}
+
+#selector fighter {
+    border: solid 1px rgb(var(--team));
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+
+    position: relative;
+
+    box-shadow:
+        0 3px 35px -10px rgb(var(--team)),
+        inset 0 3px 15px -5px rgb(var(--team));
+
+    --team: 255, 0, 0;
+
+    transition: .4s;
+}
+
+#selector fighter * {
+    transition: .4s all 0s height;
+}
+
+#selector fighter > #topbar > button {
+    position: absolute;
+    top: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    width: auto !important;
+    height: 27px !important;
+}
+
+#selector fighter > #topbar > button:first-child {
+    right: 37px;
+}
+
+#selector fighter > #topbar > button:last-child {
+    right: 5px;
+    width: 27px !important;
+    text-align: center;
+}
+
+#selector fighter > div:not(#topbar) {
+    display: flex;
+    align-items: center;
+}
+
+#selector fighter > div:has(.key) {
+    box-shadow:
+        0 3px 15px -5px rgb(var(--team)),
+        inset 0 3px 15px -5px rgb(var(--team));
+    border-radius: 5px;
+}
+
+#selector fighter > div > *:first-child {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+
+#selector fighter > div > *:last-child {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+#selector fighter > div > *:last-child[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    text-align: left;
+}
+
+#selector option, #selector optgroup {
+    text-align: left !important;
+}
+
+#selector #itemsContainerUI {
+    display: flex;
+}
+
+#selector #itemsContainerUI > select {
+    width: 100%;
+}
+
+#selector #itemsContainerUI > button {
+    width: 80px;
+    text-align: center;
+}
+
+#selector h2 {
+    margin: 0;
+    color: white;
+}
+
+#selector #itemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 5px;
+    box-shadow:
+        0 3px 35px -10px rgb(var(--team)),
+        inset 0 3px 15px -5px rgb(var(--team));
+}
+
+#selector #itemsContainer > div {
+    width: 100%;
+}
+
+#selector #itemsDiv {
+    min-height: 20px;
+    border: solid 1px rgb(var(--team));
+    overflow-y: hidden;
+    resize: vertical;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+    width: calc(100% - 12px) !important;
+}
+
+#selector .key {
+    border: solid 1px rgb(var(--team));
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: rgba(var(--team),.4);
+    color: white;
+    padding-right: 5px;
+}
+#selector .key+select,#selector .key+input {
+    border-radius: 0 5px 5px 0;
+}
+
+#selector input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em !important;
+    height: 1.15em;
+    border: 0.15em solid rgb(var(--team));
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    place-content: center;
+    position: relative;
+}
+#selector input[type="checkbox"]:has(+*) {
+    margin-right: 5px !important;
+}
+
+#selector span {
+    color: white;
+}
+
+#selector input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - .3em);
+  top: calc(50% - .3em);
+  display: inline-block;
+  width: .6em;
+  height: .6em;
+  transform: scale(0);
+  background: rgb(var(--team));
+  border-radius: .1em;
+  transition: 120ms transform ease-in-out;
+}
+
+#selector input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+#selector select,
+#selector ::picker(select) {
+  appearance: base-select;
+}
+
+#selector select:picker-icon {
+    color: rgb(var(--team));
+    transition: 1s rotate;
+}
+
+#selector select:open::picker-icon {
+  rotate: 180deg;
+}
+
+
+#selector option::checkmark {
+    color: rgb(var(--team));
+    content: '🗡';
+}
+
+#selector select {
+  transition: 0.4s;
+  border-radius: 0;
+  padding: 0 4px;
+}
+
+#selector select::picker-icon {
+  color: rgb(var(--team));
+  transition: 0.4s rotate;
+}
+#selector select:open::picker-icon {
+  rotate: 180deg;
+}
+
+
+
+
+
+
+#selector select, #selector input {
+    background: rgba(var(--team),.1);
+    border: solid 1px rgb(var(--team));
+    color: white;
+    outline: none;
+    height: 100%;
+    border-radius: 0;
+}
+
+#selector button {
+    background: rgba(var(--team),.2);
+    border: solid 1px rgb(var(--team));
+    color: white;
+    outline: none;
+}
+
+#selector #itemsContainerUI select {
+    border-bottom: none;
+    border-top-left-radius: 5px !important;
+}
+#selector #itemsContainerUI button {
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius: 5px;
+}
+
+#selector option, #selector optgroup {
+    color: black;
+}
+
+#selector #itemsDiv div {
+    display: flex !important;
+    flex-wrap: nowrap;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#selector #itemsDiv div:hover {
+    background-color: rgba(var(--team),.1);
+    box-shadow:
+        0 3px 35px -10px rgb(var(--team)),
+        inset 0 3px 15px -5px rgb(var(--team));
+    border: solid 1px rgb(var(--team));
+}
+
+#selector #itemsDiv div span {
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#selector #itemsDiv div button {
+    border-radius: 5px;
+    width: 25px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    outline: none;
+    border: none;
+    background: #00000030;
+}
+
+#selector #itemsDiv div:hover button {
+    opacity: 1;
+}
+
+#selector #fightersContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 20px;
+}
+
+#selector #fighters {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+body#selector {
+    margin: 0;
+    background: #222;
+}
+
+body#selector::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    --r: 2px;
+    --s: 25px;
+    background: radial-gradient(circle at center, #444 var(--r), transparent var(--r));
+    background-size: var(--s) var(--s);
+    z-index: -1;
+    mask-image: radial-gradient(circle at center, #000 0%, transparent 50%);
+    mask-size: 100% 100%;
+    mask-type: alpha;
+}

@@ -1,0 +1,37 @@
+{
+    "PARALYZED": {
+        "NAME": "Paralyzed",
+        "DESCRIPTION": "The creature is incapacitated and can't move or speak. Attack rolls against it have advantage, and any attack that hits from within 5 feet is a critical hit.",
+        "ID": "paralyzed",
+        "STACK": "NO-STACK",
+        "ICON": "icons/paralyzed.webp"
+    },
+    "POISONED": {
+        "NAME": "Poisoned",
+        "DESCRIPTION": "The creature has disadvantage on attack rolls and ability checks for the duration.",
+        "ID": "poisoned",
+        "STACK": "NO-STACK",
+        "ICON": "icons/poisoned.webp"
+    },
+    "FRIGHTENED": {
+        "NAME": "Frightened",
+        "DESCRIPTION": "The creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight, and it can’t willingly move closer to it.",
+        "ID": "frightened",
+        "STACK": "NO-STACK",
+        "ICON": "icons/frightened.webp"
+    },
+    "RESTRAINED": {
+        "NAME": "Restrained",
+        "DESCRIPTION": "The creature's speed becomes 0 and it cannot benefit from bonuses to speed. Attack rolls against it have advantage, and its attacks have disadvantage. It has disadvantage on Dexterity saving throws.",
+        "ID": "restrained",
+        "STACK": "NO-STACK",
+        "ICON": "icons/restrained.webp"
+    },
+    "STUNNED": {
+        "NAME": "Stunned",
+        "DESCRIPTION": "The creature is incapacitated, can't move, and can speak only falteringly. It automatically fails Strength and Dexterity saving throws. Attack rolls against it have advantage.",
+        "ID": "stunned",
+        "STACK": "NO-STACK",
+        "ICON": "icons/stunned.webp"
+    }
+}
